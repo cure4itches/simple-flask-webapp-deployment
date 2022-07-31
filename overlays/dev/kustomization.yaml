@@ -11,4 +11,4 @@ commonLabels:
 images:
 - name: simple-flask-webapp
   newName: arm7tdmi/simple-flask-webapp
-  newTag: latest
+  newTag: 18
