@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: simple-flask-webapp
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: app.dev.myungkyu.test
+    http:
+      paths:
+      - backend:
+          service:
+            name: simple-flask-webapp
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
