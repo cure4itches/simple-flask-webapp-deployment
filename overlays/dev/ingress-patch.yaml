@@ -3,7 +3,6 @@ kind: Ingress
 metadata:
   name: simple-flask-webapp
 spec:
-  ingressClassName: nginx
   rules:
   - host: app.dev.myungkyu.test
     http:

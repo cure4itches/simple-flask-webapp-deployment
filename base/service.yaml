@@ -3,9 +3,6 @@ kind: Service
 metadata:
   name: simple-flask-webapp
 spec:
+  type: ClusterIP
   selector:
     app: simple-flask-webapp
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 5000
