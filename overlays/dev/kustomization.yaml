@@ -8,3 +8,7 @@ patchesStrategicMerge:
 - ingress-patch.yaml
 commonLabels:
   env: dev
+images:
+- name: simple-flask-webapp
+  newName: arm7tdmi/simple-flask-webapp
+  newTag: latest

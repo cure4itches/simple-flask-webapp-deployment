@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: main
-        image: arm7tdmi/simple-flask-webapp:latest
+        image: simple-flask-webapp
         ports:
         - name: http
           containerPort: 5000
